@@ -1,0 +1,11 @@
+{
+    "id": "aqualib",
+    "authors": [
+        "krisp (kriscrossapplesauce27)"
+    ],
+    "version": "v1.0.0",
+    "engineVer": "v0.11.0-dev",
+	"config": {
+
+	}
+}
