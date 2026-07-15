@@ -21,7 +21,7 @@ function character:init()
     self.soul_priority = 1
     -- The color of this character's soul (optional, defaults to red)
     self.soul_color = ColorUtils.hexToRGB("#55ffff")
-    --self.soul_offset = {}
+    
     
     -- In which direction will this character's soul face (optional, defaults to facing up)
     --self.soul_facing = "down"
@@ -62,7 +62,12 @@ function character:init()
     
 
     -- Character color (for action box outline and hp bar)
-    self.color = ColorUtils.hexToRGB("#55ffff")
+    
+    if  not Kristal.getLibConfig("aqualib", "custom_head_icon") then
+        self.color = ColorUtils.hexToRGB("#46e3ff")
+    else
+     self.color = ColorUtils.hexToRGB("#55ffff")
+    end
     -- Damage color (for the number when attacking enemies) (defaults to the main color)
     self.dmg_color = nil
     -- Attack bar color (for the target bar used in attack mode) (defaults to the main color)
@@ -75,7 +80,11 @@ function character:init()
     -- Head icon in the equip / power menu
     self.menu_icon = "party/aqua/head"
     -- Path to head icons used in battle
-    self.head_icons = "party/aqua/icon"
+    if  not Kristal.getLibConfig("aqualib", "custom_head_icon") then
+        self.head_icons = "party/aqua/icon_knife"
+    else
+     self.head_icons = "party/aqua/icon"
+    end
     -- Name sprite (optional)
     self.name_sprite = "party/aqua/name"
 

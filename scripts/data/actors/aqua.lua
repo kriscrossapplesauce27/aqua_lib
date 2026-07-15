@@ -17,7 +17,7 @@ function actor:init()
 
     -- A table that defines where the Soul should be placed on this actor if they are a player.
     -- First value is x, second value is y.
-    self.soul_offset = {20/2,36/2}
+    self.soul_offset = {23,23}
 
     -- Color for this actor used in outline areas (optional, defaults to red)
     self.color = ColorUtils.hexToRGB("#55ffff")
@@ -26,6 +26,7 @@ function actor:init()
     self.path = "party/aqua/dark"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
     self.default = "walk"
+    self.flip = "left"
 
     -- Sound to play when this actor speaks (optional)
     self.voice = nil
