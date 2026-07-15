@@ -5,6 +5,7 @@ return {
             cutscene:setSpeaker("aqua")
             aqua:setSprite("pose")
             cutscene:text("[miniface:aqua][color:#55ffff]* Uuu")
+            aqua:resetSprite()
 
         end
     end
