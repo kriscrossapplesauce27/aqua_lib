@@ -26,7 +26,7 @@ function actor:init()
     self.path = "party/aqua/dark"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
     self.default = "walk"
-    self.flip = "left"
+    self.flip = "right"
 
     -- Sound to play when this actor speaks (optional)
     self.voice = nil
@@ -42,12 +42,12 @@ function actor:init()
     -- Whether this actor as a follower will blush when close to the player
     self.can_blush = false
    
-    -- TO APPLY MINIFACE/TEXT COLOR PUT AT THE START OF THE DIALOGUE ---> [miniface:aqua][color:#55ffff]
+    -- to apply miniface/colored text put this at the start of the dialogue  [miniface:aqua][color:#55ffff]
 
     -- Table of sprite animations
     self.animations = {
-        -- Movement animations
-        ["slide"]               = {"slide", 4/30, true},
+        
+        
 
         -- Battle animations
         ["battle/idle"]         = {"battle/idle", 1/6, true},
@@ -76,16 +76,24 @@ function actor:init()
         --["battle/transition_out"] = {"battle/victory", 1/10, false, next = "walk/right"},
 
         -- Cutscene animations
-        ["jump_fall"]           = {"fall", 1/5, true},
-        ["jump_land"]           = {"landed", 1/15, true},
+        ["dance"]               = {"dance", 1/6, true},
+        ["eating"]               = {"eating", 1/6, true},
+        ["laugh"]               = {"laugh", 1/6, true},
+        ["laugh_alt"]               = {"laugh_alt", 1/6, true},
+        ["shakehead"]               = {"shakehead", 1/6, true},
+        ["sit_smile"]               = {"sit_smile", 1/6, true},
+        ["sit_wave"]               = {"sit_wave", 1/6, true},
+        ["sleevewave"]               = {"sleevewave", 1/6, true},
+        ["wave"]               = {"wave", 1/10, true},
+        ["grab_jump"]               = {"grab_jump", 0.2, false},
+        ["bored"]         = {"idle_bored", 1/6, true},
+        ["jump_land"]           = {"landed", 1/15, false},
         
         ["jump_ball"]           = {"ball", 1/15, true},
         ["jump_ball_slow"]      = {"ball", 4/30, true},
     }
 
-    if Game.chapter == 1 then
-        self.animations["battle/transition"] = {"walk/right", 0, true}
-    end
+    
 
     -- Tables of sprites to change into in mirrors
     self.mirror_sprites = {
@@ -103,10 +111,8 @@ function actor:init()
         ["walk/up"] = {0, 1},
         ["walk/down"] = {0, 1},
 
-        ["walk_blush/down"] = {0, 0},
-
-        ["slide"] = {0, 0},
-
+        
+        
         -- Battle offsets
         ["battle/idle"] = {0, 0},
 
@@ -138,29 +144,48 @@ function actor:init()
         ["climb/land_left"] = {-4, -13},
 
         -- Cutscene offsets
-        ["pose"] = {-4, -2},
+        ["pose"] = {0, 1},
+        ["pose_back"] = {0, 1},
 
-        ["fall"] = {-5, -6},
+        
         ["ball"] = {1, 8},
         ["landed"] = {0, -1},
 
-        ["fell"] = {-14, 1},
+        ["fell"] = {-7, 17},
+        ["collapsed"] = {-7, 17},
 
-        ["sword_jump_down"] = {-19, -5},
-        ["sword_jump_settle"] = {-27, 4},
-        ["sword_jump_up"] = {-17, 2},
+        ["dance"] = {0,0},
+        ["eating"] = {0,3},
+        ["laugh"] = {0,2},
+        ["laugh_alt"] = {-3,2},
+        ["shakehead"] = {0,3},
+        ["sit_smile"] = {-1,3},
+        ["sit_wave"] = {-4,3},
+        ["sleevewave"] = {-6,3},
+        ["wave"] = {-4,1},
+        ["grab_jump"] = {-1,0},
+        ["idle_bored"] = {-8,3},
 
-        ["hug_left"] = {-4, -1},
-        ["hug_right"] = {-2, -1},
+        ["lasso"] = {0,2},
+        ["eye"] = {0,2},
+        ["eye_three"] = {0,2},
+        ["confused"] = {2,0},
+        ["grab"] = {-4,4},
+        ["surprise"] = {0,2},
+        ["toothy_grin"] = {-3,0},
+        ["unamused"] = {-3,0},
 
-        ["peace"] = {0, 0},
-        ["rude_gesture"] = {0, 0},
+        
 
-        ["reach"] = {-3, -1},
+        
 
-        ["sit"] = {-3, 0},
+        
 
-        ["t_pose"] = {-4, 0},
+        
+
+        ["sit"] = {-1, 3},
+
+        
     }
 end
 
