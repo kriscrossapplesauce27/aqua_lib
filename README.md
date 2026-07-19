@@ -9,7 +9,7 @@
 A library for Kristal that adds Aqua from DELTARUNE Chapter 5 as a party member.
 
 To use the colored text and miniface use this [color:#55ffff]  text command and this one [miniface:aqua]
-inside lib.json you can also choose the battle head icon to be the miniface or a custom one.
+inside lib.json you can also choose the battle head icon to be the miniface or a custom one in lib.json .
 
 
 <img width="640" height="480" alt="1784142812-1626 3166666655" src="https://github.com/user-attachments/assets/7db9ed7d-dcc8-4a80-889e-015b6e6bb634" />
