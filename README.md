@@ -1,7 +1,11 @@
 # aqua_lib
 
 <img width="640" height="480" alt="1783629980-61 016666666664" src="https://github.com/user-attachments/assets/5a44859f-95d2-44df-98a9-411bcf20ab7f" />
-<img width="640" height="480" alt="1784143159-1979 5171154319" src="https://github.com/user-attachments/assets/a8f80947-a6dd-45ae-9286-707190f2ae23" />
+<img width="640" height="480" alt="1784658491-7619 87997154" src="https://github.com/user-attachments/assets/d843c2c2-ed76-499d-8d03-e5e365700843" />
+<img width="640" height="480" alt="1784658493-7622 1466382066" src="https://github.com/user-attachments/assets/34b775ea-198c-4040-87da-b57527694173" />
+
+<sup> there's also already colors and minifaces for the other flowers for some reason (might add the rest of them as party members too idk)</sup>
+
 
 
 
